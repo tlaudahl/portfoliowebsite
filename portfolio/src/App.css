@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+}
+
+.header h1 { 
+  font-size: 6rem;
+  color: #66FCF1;
+}
+
+.header h2 {
+  color: white;
+}
+
+.header {
+  background-color: #0B0C10;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about {
+  width: 80%;
+  color: white;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactFormContainer{
+  width: 50vw;
+  margin: 0 auto;
+  /* margin-top: 2%; */
+}
+
+#contactMe {
+  font-size: 2.5rem;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 1%;
+  color: black;
+}
+
+.skillsDiv {
+  background-color: #04060D;
+  margin: 0;
+  padding: 0;
+}
+
+.skillsDiv h1, .projectsContainer h1 {
+  color: #45A29E;
+  margin-bottom: 2%;
+  font-size: 4rem;
+}
+
+.projectsContainer {
+  color: white;
+}
+
+.fab {
+  color: #C5C6C7;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #66FCF1;
+  height: 66vh;
+  padding: 3%;
+}
+
+.skillsContainer i {
+  margin: 0 3%;
+}
+
+.skill {
+  font-size: 1.6rem;
+  box-shadow: 0 1px 6px rgba(99, 99, 99, 0.12), 0 1px 4px rgba(255, 255, 255, 0.24);
+  margin: 1% 1%;
+  transition: all .5s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.navigation {
+  background-color: #0B0C10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+}
+
+.navBar {
+  position: fixed;
+  width:100%;
+  box-sizing: border-box;
+  top: 0;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25vw;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  color: #66FCF1;
+}
+
+
+.projectsContainer {
+  background-color: #0B0C10;
+  height: 100vh;
+}
+
+.projectsContainer p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.projectsDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects {
+  width: 28%;
+  box-shadow: 0 1px 6px rgba(99, 99, 99, 0.12), 0 1px 4px rgba(255, 255, 255, 0.24);
+  padding: 1%;
+  margin: 0 1%;
+}
+
+.projectButton {
+  width: 15%;
+  margin: 5%;
+}
+
+.projectButtonContainer button {
+  margin: 0 2%;
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
