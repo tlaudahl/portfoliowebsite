@@ -12,12 +12,12 @@ export default function Projects() {
                     <p>I'll Serve Soup was created by a team of developers using a variety of technology over the course of one week</p>
                     <p>I helped create the marketing landing page that links over to the main react app crated by the React developers.</p>
                     <div className='projectButtonContainer'>
-                        <a href='https://github.com/bw-ill-serve-soup/web-ui-bryant-travis' target='_blank'>
+                        <a href='https://github.com/bw-ill-serve-soup/web-ui-bryant-travis' target='_blank' rel="noopener noreferrer">
                             <Button className='projectButton' variant='contained' style={{ backgroundColor: '#45A29E' }}>
                             Code
                             </Button>
                         </a>
-                        <a href='https://illservesoup23.netlify.com/' target='_blank'>
+                        <a href='https://illservesoup23.netlify.com/' target='_blank' rel="noopener noreferrer">
                         <Button className='projectButton' variant='contained' style={{ backgroundColor: '#45A29E' }}>
                             Live
                         </Button>
@@ -36,12 +36,12 @@ export default function Projects() {
                     <p>This project was used to practice with axios making get requests to an external api and passing props and state to different components.</p>
                     <p>I used the Nasa API to get the photo of the day, and added a date picker to select a different day and see the image nasa picked for that day</p>
                     <div className='projectButtonContainer'>
-                        <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank'>
+                        <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank' rel="noopener noreferrer">
                             <Button className='projectButton' variant='contained' style={{ backgroundColor: '#45A29E' }}>
                             Code
                             </Button>
                         </a>
-                        <a href='https://tlaudahl-nasa-apod.netlify.com/' target='_blank'>
+                        <a href='https://tlaudahl-nasa-apod.netlify.com/' target='_blank' rel="noopener noreferrer">
                         <Button className='projectButton' variant='contained' style={{ backgroundColor: '#45A29E' }}>
                             Live
                         </Button>
@@ -60,12 +60,12 @@ export default function Projects() {
                     <p>This project was used to practice with axios making get requests to an external api</p>
                     <p>I also go to practice passing props and changing state between components along with use React Router</p>
                     <div className='projectButtonContainer'>
-                        <a href='https://github.com/tlaudahl/Sprint-Challenge-Single-Page-Apps' target='_blank'>
+                        <a href='https://github.com/tlaudahl/Sprint-Challenge-Single-Page-Apps' target='_blank' rel="noopener noreferrer">
                             <Button className='projectButton' variant='contained' style={{ backgroundColor: '#45A29E' }}>
                             Code
                             </Button>
                         </a>
-                        <a href='https://randmapi.netlify.com/' target='_blank'>
+                        <a href='https://randmapi.netlify.com/' target='_blank' rel="noopener noreferrer">
                         <Button className='projectButton' variant='contained' style={{ backgroundColor: '#45A29E' }}>
                             Live
                         </Button>
