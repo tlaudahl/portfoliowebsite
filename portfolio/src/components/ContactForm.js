@@ -1,45 +1,83 @@
 import React from 'react'
 import { withFormik, Form, Field } from 'formik';
-import { TextField } from 'formik-material-ui';
+// import { TextField } from 'formik-material-ui';
+import { withStyles, makeStyles, TextField } from '@material-ui/core';
 import Button from "@material-ui/core/Button";
+
+import '../css/contact.css'
 function ContactForm() {
+
+    const useStyles = makeStyles(theme => ({
+        root: {
+            display: "flex",
+            flexWrap: "wrap"
+        },
+        margin: {
+            margin: theme.spacing(1)
+        }
+    }));
+
+    const CssTextField = withStyles({
+        root: {
+            "& label.Mui-focused": {
+                color: "#66FCF1"
+            },
+            "& label": {
+                color: '#66FCF1'
+            },
+            "& .MuiInput-underline:after": {
+                borderBottomColor: "#66FCF1"
+            },
+            "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                    borderColor: "#66FCF1"
+                },
+                "&:hover fieldset": {
+                    borderColor: "#66FCF1"
+                },
+                "&.Mui-focused fieldset": {
+                    borderColor: "#66FCF1"
+                }
+            }
+        }
+    })(TextField);
+
+    const ColorButton = withStyles(theme => ({
+        root: {
+            backgroundColor: '#45a29e',
+        },
+    }))(Button);
+
+    const classes = useStyles();
+
     return (
-        <section>
+        <section className='contact' id='contact'>
             <div className='contactFormContainer'>
                 <Form className='contactForm'>
-                    <label id='contactMe'>Contact Me</label>
-                    <Field
-                    className='formField'
+                    <h1>Contact Me</h1>
+                    <CssTextField
+                    className={classes.margin}
                     name='name'
                     label='Name'
-                    type='text'
                     variant='outlined'
-                    fullWidth
-                    margin='normal'
-                    component={TextField} />
-                    <Field
-                    className='formField'
-                    name='email'
+                    fullWidth />
+                    <CssTextField
+                    className={classes.margin}
+                    name='name'
                     label='Email'
-                    type='email'
                     variant='outlined'
-                    fullWidth
-                    margin='normal'
-                    component={TextField} />
-                    <Field
-                    className='formField'
-                    type='textarea' 
-                    name='message'
+                    fullWidth />
+                    <CssTextField
+                    className={classes.margin}
+                    name='name'
                     label='Message'
                     variant='outlined'
-                    fullWidth
-                    margin='normal'
-                    component={TextField}
-                    multiline/>
-                    <Button
+                    multiline
+                    rows='4'
+                    fullWidth />
+                    <ColorButton
                     type='submit'
-                    variant='contained'
-                    color='primary'>Submit</Button>
+                    variant='contained'>Submit</ColorButton>
                 </Form>
             </div>
         </section>

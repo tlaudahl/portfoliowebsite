@@ -1,0 +1,72 @@
+.projectsContainer {
+  background-color: #0B0C10;
+  height: 100vh;
+  color: white; }
+  @media screen and (max-width: 500px) {
+    .projectsContainer {
+      height: auto; } }
+  @media screen and (max-width: 800px) {
+    .projectsContainer {
+      height: auto; } }
+  .projectsContainer p {
+    font-size: 1.2rem;
+    line-height: 1.6; }
+    @media screen and (max-width: 500px) {
+      .projectsContainer p {
+        font-size: 1rem;
+        line-height: 1.4; } }
+  .projectsContainer h1 {
+    color: #45A29E;
+    margin-bottom: 2%;
+    font-size: 4rem; }
+    @media screen and (max-width: 500px) {
+      .projectsContainer h1 {
+        font-size: 2rem; } }
+  .projectsContainer .projectsDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 500px) {
+      .projectsContainer .projectsDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .projectsContainer .projectsDiv .projects {
+      width: 28%;
+      box-shadow: 0 1px 6px rgba(99, 99, 99, 0.12), 0 1px 4px rgba(255, 255, 255, 0.24);
+      padding: 1%;
+      margin: 0 1%; }
+      @media screen and (max-width: 500px) {
+        .projectsContainer .projectsDiv .projects {
+          width: 90%;
+          margin-bottom: 3%; } }
+      @media screen and (max-width: 800px) {
+        .projectsContainer .projectsDiv .projects {
+          width: 90%;
+          margin-bottom: 3%; } }
+      .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
+        width: 15%;
+        margin: 5%; }
+        @media screen and (max-width: 500px) {
+          .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
+            margin: 0 2%; } }
+        @media screen and (max-width: 800px) {
+          .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
+            margin: 0 2%; } }
+      .projectsContainer .projectsDiv .projects .technologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .projectsContainer .projectsDiv .projects .technologies .technology {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 25%; }
+          @media screen and (max-width: 500px) {
+            .projectsContainer .projectsDiv .projects .technologies .technology {
+              width: 50%; } }
+        .projectsContainer .projectsDiv .projects .technologies .fab {
+          color: #C5C6C7; }

@@ -1,0 +1,32 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.navBar {
+    position: fixed;
+    width:100%;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1;
+    .navigation {
+        background-color: $oddBgColor;
+        @include flexRowCenter(space-between);
+        height: 5vh;
+        .logo {
+            color: $mainColor;
+        }
+        .navLinks {
+            @include flexRowCenter(space-around);
+            width: 25vw;
+            @media screen and (max-width: 800px) {
+                width: 50vw;
+            }
+            @media screen and (max-width: 500px) {
+                width: 75vw;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

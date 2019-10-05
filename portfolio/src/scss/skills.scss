@@ -1,0 +1,56 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.skillsDiv {
+    background-color: $evenBgColor;
+    h1 {
+        color: $secondaryColor;
+        margin-bottom: 2%;
+        font-size: 4rem;
+        @media screen and (max-width: 500px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 2.5rem;
+        }
+    }
+    .skillsContainer {
+        @include flexRowCenter(center);
+        flex-wrap: wrap;
+        color: $mainColor;
+        height: 33vh;
+        i {
+            margin: 0 3%;
+            @media screen and (max-width: 500px) {
+                margin: 2% 1%;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            height: auto;
+            @include flexRowCenter(space-evenly)
+        }
+        @media screen and (max-width: 800px) {
+            height: auto;
+            @include flexRowCenter(center)
+        }
+        .skill {
+            font-size: 1.6rem;
+            margin: 1% 1%;
+            transition: all .5s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+            @media screen and (max-width: 500px) {
+                font-size: .6rem;
+                @include flexColumnCenter(space-between);
+                width: 30%;
+            }
+            @media screen and (max-width: 800px) {
+                font-size: 1.3rem;
+            }
+        }
+        .fab {
+            color: $iconGray;
+        }
+    }
+}

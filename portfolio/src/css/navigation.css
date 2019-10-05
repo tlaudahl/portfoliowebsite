@@ -1,0 +1,28 @@
+.navBar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 1; }
+  .navBar .navigation {
+    background-color: #0B0C10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh; }
+    .navBar .navigation .logo {
+      color: #66FCF1; }
+    .navBar .navigation .navLinks {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 25vw; }
+      @media screen and (max-width: 800px) {
+        .navBar .navigation .navLinks {
+          width: 50vw; } }
+      @media screen and (max-width: 500px) {
+        .navBar .navigation .navLinks {
+          width: 75vw; } }
+      .navBar .navigation .navLinks a {
+        color: white;
+        text-decoration: none; }

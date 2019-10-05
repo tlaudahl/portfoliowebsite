@@ -1,0 +1,27 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.header {
+    background-color: $oddBgColor;
+    height: 100vh;
+    @include flexColumnCenter(center);
+    h1 {
+        font-size: 6rem;
+        color: $mainColor;
+        @media screen and (max-width: 500px) {
+            font-size: 3rem;
+        }
+    }
+    h2 {
+        color: white;
+    }
+    #about {
+        width: 80%;
+        color: white;
+        line-height: 1.6;
+        font-size: 1.4rem;
+        @media screen and (max-width: 500px) {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.contact {
+  background-color: #04060D; }
+  .contact .contactFormContainer {
+    width: 50vw;
+    margin: 0 auto; }
+    @media screen and (max-width: 500px) {
+      .contact .contactFormContainer {
+        width: 75vw; } }
+    .contact .contactFormContainer .contactForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .contact .contactFormContainer .contactForm h1 {
+        color: #45A29E;
+        margin-bottom: 2%;
+        font-size: 4rem; }
+        @media screen and (max-width: 500px) {
+          .contact .contactFormContainer .contactForm h1 {
+            font-size: 2.5rem; } }
+      .contact .contactFormContainer .contactForm input, .contact .contactFormContainer .contactForm textarea {
+        color: white; }
