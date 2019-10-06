@@ -5,6 +5,7 @@ import ContactForm from './components/ContactForm';
 import Skills from './components/Skills';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Projects />
       <ContactForm />
+      <Footer />
     </div>
   );
 }

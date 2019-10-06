@@ -1,0 +1,19 @@
+import React from 'react'
+import '../css/footer.css'
+
+export default function Footer() {
+    return (
+        <footer>
+            <div className='copyEmail'>
+                <p>&copy; Travis Laudahl</p>
+                <i id='email' title='travis.laudahl@gmail.com' className="fas fa-envelope fa-2x"></i>
+                <p>travis.laudahl@gmail.com</p>
+            </div>
+            <div className='socials'>
+                <i id='github' title='Minnesota' className="fab fa-github fa-2x"></i>
+                <i id='linkedin' title='travis-laudahl' className="fab fa-linkedin-in fa-2x"></i>
+                <i id='twitter' title='LaudahlTravis' className="fab fa-twitter fa-2x"></i>
+            </div>
+        </footer>
+    )
+}

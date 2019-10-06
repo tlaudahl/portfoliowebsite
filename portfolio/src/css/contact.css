@@ -1,5 +1,9 @@
 .contact {
-  background-color: #04060D; }
+  background-color: #04060D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%; }
   .contact .contactFormContainer {
     width: 50vw;
     margin: 0 auto; }

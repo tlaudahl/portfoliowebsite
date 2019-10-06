@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #45A29E; }
+  footer .copyEmail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%; }
+  footer .socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%; }
+    footer .socials .fas, footer .socials .fab {
+      color: black;
+      transition: all .3s ease-in-out; }
+      footer .socials .fas:hover, footer .socials .fab:hover {
+        transform: scale(1.1);
+        color: #C5C6C7; }
+    footer .socials .fab {
+      cursor: pointer; }

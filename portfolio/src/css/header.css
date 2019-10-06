@@ -21,3 +21,24 @@
     @media screen and (max-width: 500px) {
       .header #about {
         font-size: 1rem; } }
+  .header .socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33vw;
+    height: 5vh;
+    color: #45A29E; }
+    .header .socials .fas, .header .socials .fab {
+      color: #C5C6C7;
+      transition: all .3s ease-in-out; }
+      .header .socials .fas:hover, .header .socials .fab:hover {
+        transform: scale(1.1);
+        color: #45A29E; }
+    .header .socials .fab {
+      cursor: pointer; }
+    .header .socials .email {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header .socials .email p {
+        margin-left: 5px; }

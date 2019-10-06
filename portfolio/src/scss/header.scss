@@ -24,4 +24,27 @@
             font-size: 1rem;
         }
     }
+    .socials {
+        @include flexRowCenter(space-evenly);
+        width: 33vw;
+        height: 5vh;
+        color: $secondaryColor;
+        .fas, .fab {
+            color: $iconGray;
+            transition: all .3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                color: $secondaryColor;
+            }
+        }
+        .fab {
+            cursor: pointer;
+        }
+        .email {
+            @include flexRowCenter(center)
+            p {
+                margin-left: 5px;
+            }
+        }
+    }
 }

@@ -1,0 +1,25 @@
+@import './mixins.scss';
+@import './variables.scss';
+footer {
+    @include flexRowCenter(space-between);
+    background-color: $secondaryColor;
+    .copyEmail {
+        @include flexRowCenter(space-between);
+        width: 20%;
+    }
+    .socials {
+        @include flexRowCenter(space-around);
+        width: 10%;
+        .fas, .fab {
+            color: black;
+            transition: all .3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                color: $iconGray;
+            }
+        }
+        .fab {
+            cursor: pointer;
+        }
+    }
+}

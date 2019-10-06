@@ -1,11 +1,13 @@
-import React from 'react'
-import { withFormik, Form, Field } from 'formik';
-// import { TextField } from 'formik-material-ui';
+import React, { useState } from 'react';
 import { withStyles, makeStyles, TextField } from '@material-ui/core';
 import Button from "@material-ui/core/Button";
-
 import '../css/contact.css'
-function ContactForm() {
+
+
+function ContactForm({ values }) {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
     const useStyles = makeStyles(theme => ({
         root: {
@@ -50,26 +52,42 @@ function ContactForm() {
 
     const classes = useStyles();
 
+    const handleChange = e => {
+        if (e.target.id === 'name') {
+            setName(e.target.value)
+        } else if (e.target.id === 'email') {
+            setEmail(e.target.value)
+        } else {
+            setMessage(e.target.value);
+        }
+    }
+
     return (
         <section className='contact' id='contact'>
             <div className='contactFormContainer'>
-                <Form className='contactForm'>
+                <form action='https://formcarry.com/s/F6SGODTF9OL' method='POST' className='contactForm'>
                     <h1>Contact Me</h1>
                     <CssTextField
                     className={classes.margin}
-                    name='name'
+                    id='name'
+                    name='Name'
+                    type='text'
                     label='Name'
                     variant='outlined'
                     fullWidth />
                     <CssTextField
                     className={classes.margin}
-                    name='name'
+                    id='email'
+                    name='Email'
                     label='Email'
+                    type='text'
                     variant='outlined'
                     fullWidth />
                     <CssTextField
                     className={classes.margin}
-                    name='name'
+                    id='message'
+                    name='Message'
+                    type='text'
                     label='Message'
                     variant='outlined'
                     multiline
@@ -78,20 +96,10 @@ function ContactForm() {
                     <ColorButton
                     type='submit'
                     variant='contained'>Submit</ColorButton>
-                </Form>
+                </form>
             </div>
         </section>
     );
 };
 
-const FormikContactForm = withFormik({
-    mapPropsToValues({ name, email, message }) {
-        return {
-            name: name || '',
-            email: email || '',
-            message: message || '',
-        }
-    }
-})(ContactForm);
-
-export default FormikContactForm;
+export default ContactForm;
