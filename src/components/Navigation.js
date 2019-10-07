@@ -3,10 +3,6 @@ import React from 'react'
 import '../css/navigation.css'
 
 export default function Navigation() {
-
-    const handleClick = e => {
-        console.log(e.target);
-    }
     return (
         <div className='navBar'>
             <nav className='navigation'>

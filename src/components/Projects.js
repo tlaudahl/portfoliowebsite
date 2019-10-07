@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, withStyles, makeStyles } from '@material-ui/core';
+import { Button, withStyles } from '@material-ui/core';
 import '../css/projects.css';
 
 export default function Projects() {

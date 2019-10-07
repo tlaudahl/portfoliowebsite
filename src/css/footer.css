@@ -8,11 +8,32 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 20%; }
+    @media screen and (max-width: 800px) {
+      footer .copyEmail {
+        width: 50%; } }
+    @media screen and (max-width: 500px) {
+      footer .copyEmail {
+        width: 95%; } }
+  @media screen and (max-width: 800px) {
+    footer {
+      display: flex;
+      flex-direction: column-reverse; } }
   footer .socials {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 10%; }
+    @media screen and (max-width: 800px) {
+      footer .socials {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1%;
+        width: 25%; } }
+    @media screen and (max-width: 500px) {
+      footer .socials {
+        margin-top: 1%;
+        width: 50%; } }
     footer .socials .fas, footer .socials .fab {
       color: black;
       transition: all .3s ease-in-out; }
