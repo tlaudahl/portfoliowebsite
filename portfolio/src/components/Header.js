@@ -17,7 +17,7 @@ export default function Header(props) {
         <header className='header' id='home'>
             <h1>Travis Laudahl</h1>
             <div className='socials'>
-                <div className='email'><i id='email' title='travis.laudahl@gmail.com' className="fas fa-envelope fa-2x" onClick={handleClick}></i><p>travis.laudahl@gmail.com</p></div>
+                <div className='email'><a href='#contact'><i id='email' title='travis.laudahl@gmail.com' className="fas fa-envelope fa-2x"></i></a><p>travis.laudahl@gmail.com</p></div>
                 <i id='github' title='Minnesota' className="fab fa-github fa-2x" onClick={handleClick}></i>
                 <i id='linkedin' title='travis-laudahl' className="fab fa-linkedin-in fa-2x" onClick={handleClick}></i>
                 <i id='twitter' title='LaudahlTravis' className="fab fa-twitter fa-2x" onClick={handleClick}></i>
