@@ -20,6 +20,12 @@
                     font-size: 2.5rem;
                 }
             }
+            p {
+                color: $secondaryColor;
+                font-size: 1.4em;
+                padding: 0;
+                margin: 2% 0;
+            }
             input, textarea {
                 color: white;
             }
