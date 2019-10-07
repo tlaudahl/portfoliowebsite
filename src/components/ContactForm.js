@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { withStyles, makeStyles, TextField } from '@material-ui/core';
 import Button from "@material-ui/core/Button";
 import '../css/contact.css'
 
 
-function ContactForm({ values }) {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+function ContactForm() {
 
     const useStyles = makeStyles(theme => ({
         root: {
@@ -51,16 +48,6 @@ function ContactForm({ values }) {
     }))(Button);
 
     const classes = useStyles();
-
-    const handleChange = e => {
-        if (e.target.id === 'name') {
-            setName(e.target.value)
-        } else if (e.target.id === 'email') {
-            setEmail(e.target.value)
-        } else {
-            setMessage(e.target.value);
-        }
-    }
 
     return (
         <section className='contact' id='contact'>

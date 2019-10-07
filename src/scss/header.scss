@@ -29,6 +29,13 @@
         width: 33vw;
         height: 5vh;
         color: $secondaryColor;
+        @media screen and (max-width: 800px) {
+            width: 50vw;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            font-size: .9em;
+        }
         .fas, .fab {
             color: $iconGray;
             transition: all .3s ease-in-out;

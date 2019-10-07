@@ -6,10 +6,29 @@ footer {
     .copyEmail {
         @include flexRowCenter(space-between);
         width: 20%;
+        @media screen and (max-width: 800px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column-reverse;
     }
     .socials {
         @include flexRowCenter(space-around);
         width: 10%;
+        @media screen and (max-width: 800px) {
+            @include flexRowCenter(space-evenly);
+            margin-top: 1%;
+            width: 25%;
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 1%;
+            width: 50%;
+        }
         .fas, .fab {
             color: black;
             transition: all .3s ease-in-out;
