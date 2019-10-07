@@ -1,0 +1,55 @@
+.skillsDiv {
+  background-color: #0B0C10; }
+  .skillsDiv h1 {
+    color: #45A29E;
+    margin-bottom: 2%;
+    font-size: 4rem; }
+    @media screen and (max-width: 500px) {
+      .skillsDiv h1 {
+        font-size: 2rem; } }
+    @media screen and (max-width: 800px) {
+      .skillsDiv h1 {
+        font-size: 2.5rem; } }
+  .skillsDiv .skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #66FCF1;
+    height: 33vh; }
+    .skillsDiv .skillsContainer i {
+      margin: 0 3%; }
+      @media screen and (max-width: 500px) {
+        .skillsDiv .skillsContainer i {
+          margin: 2% 1%; } }
+    @media screen and (max-width: 500px) {
+      .skillsDiv .skillsContainer {
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; } }
+    @media screen and (max-width: 800px) {
+      .skillsDiv .skillsContainer {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    .skillsDiv .skillsContainer .skill {
+      font-size: 1.6rem;
+      margin: 1% 1%;
+      transition: all .5s ease-in-out; }
+      .skillsDiv .skillsContainer .skill:hover {
+        transform: scale(1.1); }
+      @media screen and (max-width: 500px) {
+        .skillsDiv .skillsContainer .skill {
+          font-size: .6rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 30%; } }
+      @media screen and (max-width: 800px) {
+        .skillsDiv .skillsContainer .skill {
+          font-size: 1.3rem; } }
+    .skillsDiv .skillsContainer .fab {
+      color: #C5C6C7; }
