@@ -46,6 +46,8 @@
         .projectsContainer .projectsDiv .projects {
           width: 90%;
           margin-bottom: 3%; } }
+      .projectsContainer .projectsDiv .projects .projectButtonContainer a {
+        text-decoration: none; }
       .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
         width: 15%;
         margin: 5%; }
