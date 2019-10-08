@@ -1,19 +1,21 @@
 import React from 'react'
 import { Button, withStyles } from '@material-ui/core';
+import Fade from 'react-reveal/Fade';
 import '../css/projects.css';
 
 export default function Projects() {
 
     const ColorButton = withStyles(theme => ({
         root: {
-          backgroundColor: '#45a29e',
+            backgroundColor: '#45a29e',
         },
-      }))(Button);
+    }))(Button);
 
     return (
         <section className='projectsContainer' id='projects'>
             <h1>Projects</h1>
             <div className='projectsDiv'>
+                <Fade left>
                 <div className='projects'>
                     <h2>I'll Serve Soup</h2>
                     <p>I'll Serve Soup was created by a team of developers using a variety of technology over the course of one week</p>
@@ -37,6 +39,8 @@ export default function Projects() {
                             <div className='technology'>LESS <i className="fab fa-less fa-2x"></i></div>
                         </div>
                 </div>
+                </Fade>
+                <Fade>
                 <div className='projects'>
                     <h2>Nasa - Photo of the day</h2>
                     <p>This project was used with axios making get requests to an external api and passing props and state.</p>
@@ -60,6 +64,8 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className='projects'>
                     <h2>Rick and Morty API</h2>
                     <p>This project was used with axios making get requests to an external api, react and react router</p>
@@ -83,6 +89,7 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
+                </Fade>
             </div>
         </section>
     )
