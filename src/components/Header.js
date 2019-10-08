@@ -1,6 +1,5 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import LightSpeed from 'react-reveal/LightSpeed';
 import '../css/header.css'
 
 
@@ -25,9 +24,9 @@ export default function Header(props) {
                 <Fade right big><i id='twitter' title='LaudahlTravis' className="fab fa-twitter fa-2x" onClick={handleClick}></i></Fade>
             </div>
             <Fade bottom><h2>Full Stack Web Developer</h2></Fade>
-            <LightSpeed><p id='about'>
+            <p id='about'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet lectus sit amet risus scelerisque accumsan et ac risus. Aenean vulputate sagittis arcu. Maecenas eget fermentum est. Sed ornare facilisis dapibus. Fusce vel eros volutpat, tempor velit at, pretium urna. Praesent rhoncus eros nibh, sed sagittis ante facilisis vitae. 
-            </p></LightSpeed>
+            </p>
         </header>
     )
 }

@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+      {console.log('I too like to look under the hood of websites! Reach out @ travis.laudahl@gmail.com')}
       <Navigation />
       <Header />
       <Projects />
