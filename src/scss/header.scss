@@ -5,11 +5,18 @@
     background-color: $oddBgColor;
     height: 100vh;
     @include flexColumnCenter(center);
+    @media screen and (max-width: 800px) and (orientation: landscape) {
+        height: auto;
+        margin-top: 2%;
+    }
     h1 {
         font-size: 6rem;
         color: $mainColor;
         @media screen and (max-width: 500px) {
             font-size: 3rem;
+        }
+        @media screen and (max-width: 800px) and (orientation: landscape) {
+            font-size: 2.5rem;
         }
     }
     h2 {
@@ -21,6 +28,9 @@
         line-height: 1.6;
         font-size: 1.4rem;
         @media screen and (max-width: 500px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 800px) and (orientation: landscape) {
             font-size: 1rem;
         }
     }
@@ -48,7 +58,7 @@
             cursor: pointer;
         }
         .email {
-            @include flexRowCenter(center)
+            @include flexRowCenter(center);
             p {
                 margin-left: 5px;
             }

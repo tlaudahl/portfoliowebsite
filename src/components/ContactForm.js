@@ -54,7 +54,7 @@ function ContactForm() {
             <div className='contactFormContainer'>
                 <form action='https://formcarry.com/s/F6SGODTF9OL' method='POST' className='contactForm'>
                     <h1>Contact</h1>
-                    <p>Got a question or want to work with me?</p>
+                    <p>Have a question or want to work with me?</p>
                     <CssTextField
                     className={classes.margin}
                     id='name'
