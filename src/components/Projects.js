@@ -70,12 +70,12 @@ export default function Projects() {
                     <h2>Rick and Morty API</h2>
                     <p>This project was used with axios making get requests to an external api, react and react router</p>
                     <div className='projectButtonContainer'>
-                        <a href='https://github.com/tlaudahl/Sprint-Challenge-Single-Page-Apps' target='_blank' rel="noopener noreferrer">
+                        <a href='https://github.com/tlaudahl/React-Redux-App' target='_blank' rel="noopener noreferrer">
                             <ColorButton className='projectButton' variant='contained'>
                             Code
                             </ColorButton>
                         </a>
-                        <a href='https://randmapi.netlify.com/' target='_blank' rel="noopener noreferrer">
+                        <a href='https://sparandmapi.netlify.com' target='_blank' rel="noopener noreferrer">
                         <ColorButton className='projectButton' variant='contained'>
                             Live
                         </ColorButton>
@@ -86,6 +86,7 @@ export default function Projects() {
                             <div className='technology'>CSS3 <i className="fab fa-css3-alt fa-2x"></i></div>
                             <div className='technology'>JavaScript <i className="fab fa-js-square fa-2x"></i></div>
                             <div className='technology'>React <i className="fab fa-react fa-2x"></i></div>
+                            <div className='technology'>React Redux <i className="fab fa-react fa-2x"></i></div>
                         </div>
                     </div>
                 </div>
