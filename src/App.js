@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import './App.css';
 import Header from './components/Header'
@@ -9,16 +9,21 @@ import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
+const trackingId = 'UA-157433924-1'
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname);
+
 function App() {
+
   return (
     <div className="App">
       {console.log('I too like to look under the hood of websites! Reach out @ travis.laudahl@gmail.com')}
-      <Route path='/' component={Navigation} />
-      <Route path='/' exact component={Header} />
-      <Route path='/' exact component={Projects} />
-      <Route path='/' exact component={Skills} />
-      <Route path='/' exact component={ContactForm} />
-      <Route path='/' component={Footer}/>
+      <Navigation />
+      <Header />
+      <Projects />
+      <Skills />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
