@@ -1,9 +1,6 @@
 .navBar {
-  position: fixed;
   width: 100%;
-  box-sizing: border-box;
-  top: 0;
-  z-index: 1; }
+  box-sizing: border-box; }
   .navBar .navigation {
     background-color: #0B0C10;
     display: flex;
@@ -26,3 +23,6 @@
       .navBar .navigation .navLinks a {
         color: white;
         text-decoration: none; }
+        .navBar .navigation .navLinks a:hover {
+          color: #45a29e;
+          text-decoration: underline; }

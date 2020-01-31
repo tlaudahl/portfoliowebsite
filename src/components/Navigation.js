@@ -7,7 +7,6 @@ export default function Navigation() {
         <div className='navBar'>
             <nav className='navigation'>
                 <div className='logo'>
-                {/* <h2>&lt;TL.D&gt;</h2> */}
                 <h2>TL.D</h2>
                 </div>
                     <div className='navLinks'>
