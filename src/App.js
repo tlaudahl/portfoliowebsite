@@ -58,7 +58,7 @@ function App() {
         <DialogTitle classes={{ root: classes.root }} id='alert-dialog-title'>{"Accept the use of google analytics?"}</DialogTitle>
         <DialogContent>
           <DialogContentText id='alert-dialog-description' classes={{ root: classes.rootText }}>
-            I added Google Analytics to my portfolio site simply for the practice and to track things like page views, button clicks and load times. Button clicks are so I know if anyone who views my profile actually clicks to view any of my projects or social accounts. I added this popup so you may opt out if you don't want anything sent to google.
+            I added Google Analytics to my portfolio site simply for the practice and to track things like page views, button clicks and load times. Button clicks are so I know if anyone who views my portfolio actually clicks to view any of my projects or social accounts. I added this popup so you may opt out if you don't want anything sent to google.
           </DialogContentText>
         </DialogContent>
         <DialogActions>

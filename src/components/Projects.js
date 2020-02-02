@@ -76,6 +76,7 @@ export default function Projects() {
                         </ColorButton>
                         </a>
                     </div>
+                    <img style={{ cursor: 'pointer'}} onMouseOver={e => (e.currentTarget.src=require('../assests/rick_and_morty.gif'))} id='rickAndMortyPic' onMouseOut={e => (e.currentTarget.src = require('../assests/rick_and_morty_bw.jpg'))} src={require("../assests/rick_and_morty_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
                 </div>
                 </Fade>
             </div>
