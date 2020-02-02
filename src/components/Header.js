@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react';
 import ReactGA from 'react-ga';
 import Fade from 'react-reveal/Fade';
-import '../css/header.css'
 
+import '../css/header.css';
 
 export default function Header(props) {
-    const [hidden, setHidden] = useState(true)
 
     const handleClick = e => {
         const links = {
@@ -26,6 +25,7 @@ export default function Header(props) {
     return (
         <header className='header' id='home'>
             <Fade top><h1>Travis Laudahl</h1></Fade>
+            <Fade bottom><h2>Full Stack Web Developer</h2></Fade>
             <div className='socials'>
                 <Fade left big><div className='email'><a href='#contact'><i id='email' title='travis.laudahl@gmail.com' className="fas fa-envelope fa-2x"></i></a></div></Fade>
                 <Fade right big><i id='github' title='tlaudahl' className="fab fa-github fa-2x" onClick={(e) => {
@@ -41,22 +41,8 @@ export default function Header(props) {
                     handleClick(e)
                 }}></i></Fade>
             </div>
-            <Fade bottom><h2>Full Stack Web Developer</h2></Fade>
             <p id='about'>
-                Full Stack Web Developer with a background in the automotive field and management. From my first job as a tire tech to my current job as a aircraft deicer I've worked in teams as a member and a leader. Hands-on experience in JavaScript, React, Node.js, Redux, and <a href='#skills'>other web technologies</a>. {hidden && <span className='moreLess' onClick={() => { 
-                    setHidden(!hidden)
-                    analytics('About Me', 'User wanted to read more about ,e')
-                    }}> Read More...</span>}
-                {!hidden &&
-                    <>
-                        <span id='aboutMore' className={hidden ? 'hidden' : ''}>
-                            I spent the last few years as a night manager for Protech Automotive where I supervised and trained a team of 6-10 people, and more recently as an aircraft deicer. I started at Protech Auotmotive as a lube technician but my attention to detail, willingness to learn and learn quickly, and hard work got me promoted to Night Manager for the express lube in a short 3 months. My past experience in the automotive field working hands on with different tools and vehicles coupled with growing up around a computer I knew I wanted to combine the best of both worlds and get into the tech world so I took a risk, and left the safety of my job to pursue a career and more importantly my dreams.
-                        </span>
-                        <span className='moreLess' onClick={() => {
-                            setHidden(!hidden)
-                            analytics('About Me', 'User closed the About Me section')
-                            }}><br />Less...</span>
-                    </>}
+            Full Stack Web Developer primarily building with JavaScript, React, React Native, Node.js, and Redux right now. I have a background in management in the automotive field and currently work as an aircraft deicer on the weekends while finishing up my studies full-time in <a href='https://lambdaschool.com/' target='_blank' rel="noopener noreferrer">Lambda School</a>. I've had the opportunity to study in their accelerated <a href='https://learn.lambdaschool.com/course/cs-fsw' target='_blank' rel="noopener noreferrer">Full Stack Web Development program</a> since August 2019. Having always loved computers and wanting to eventually transition into software development, Lambda School's accessible and challenging program was the right opportunity to launch this transition. As someone who is a natural at tinkering and problem solving, I look forward to contributing my skills to a team, building products and tools people love.
             </p>
         </header>
     )

@@ -27,7 +27,7 @@ export default function Projects() {
                 <div className='projects'>
                     <h2>I'll Serve Soup</h2>
                     <p>I'll Serve Soup was created by a team of developers using a variety of technology over the course of one week</p>
-                    <p>I was responsible for building the "Marketing Page" which is the page you will if you click the Live button. It was built after my finishing the first unit at Lambda School.</p>
+                    <p>I was responsible for building the "Marketing Page" which is the page you will see if you click the Live button. It was built after finishing the first unit (3 weeks) at Lambda School.</p>
                     <div className='projectButtonContainer'>
                         <a href='https://github.com/bw-ill-serve-soup/web-ui-bryant-travis' target='_blank' rel="noopener noreferrer">
                             <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view code for I Serve Soup')}>
@@ -44,8 +44,8 @@ export default function Projects() {
                 </Fade>
                 <Fade>
                 <div className='projects'>
-                    <h2>Nasa - Photo of the day</h2>
-                    <p>This project was used with axios making get requests to an external api and passing props and state.</p>
+                    <h2>NASA - Photo of the day</h2>
+                    <p>This project was used with Axios making get requests to an external API and passing props and state.</p>
                     <div className='projectButtonContainer'>
                         <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank' rel="noopener noreferrer">
                             <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for NASA Project')}>
@@ -63,7 +63,7 @@ export default function Projects() {
                 <Fade right>
                 <div className='projects'>
                     <h2>Rick and Morty API</h2>
-                    <p>This project was used with axios making get requests to an external api, react and react router</p>
+                    <p>This project was used with Axios making get requests to an external API, React and React Router</p>
                     <div className='projectButtonContainer'>
                         <a href='https://github.com/tlaudahl/React-Redux-App' target='_blank' rel="noopener noreferrer">
                             <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for Rick and Morty API App')}>
