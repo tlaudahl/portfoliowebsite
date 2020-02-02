@@ -24,13 +24,20 @@
     width: 80%;
     color: white;
     line-height: 1.6;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    font-weight: 500; }
     @media screen and (max-width: 500px) {
       .header #about {
         font-size: 1rem; } }
     @media screen and (max-width: 800px) and (orientation: landscape) {
       .header #about {
         font-size: 1rem; } }
+    .header #about a {
+      color: #66fcf1; }
+    .header #about .hidden {
+      display: hidden; }
+    .header #about .moreLess {
+      cursor: pointer; }
   .header .socials {
     display: flex;
     justify-content: space-evenly;
