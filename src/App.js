@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactGA from 'react-ga';
 import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button, makeStyles } from '@material-ui/core';
 
+
 import './App.css';
 import Header from './components/Header'
 import ContactForm from './components/ContactForm';
@@ -40,6 +41,7 @@ function App() {
   const [open, setOpen] = useState(true);
 
   const handleClose = () => {
+    console.log('I too like to look under the hood of websites! Reach out @ contact@travislaudahl.com')
     setOpen(false);
   }
 
@@ -75,7 +77,6 @@ function App() {
           </Button>
         </DialogActions>
       </Dialog>
-      {console.log('I too like to look under the hood of websites! Reach out @ travis.laudahl@gmail.com')}
       <Navigation />
       <Header />
       <Projects />

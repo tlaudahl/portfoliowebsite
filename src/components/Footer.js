@@ -16,8 +16,8 @@ export default function Footer() {
         <footer>
             <div className='copyEmail'>
                 <p>&copy; Travis Laudahl</p>
-                <i id='email' title='travis.laudahl@gmail.com' className="fas fa-envelope fa-2x"></i>
-                <p>travis.laudahl@gmail.com</p>
+                <i id='email' title='contact@travislaudahl.com' className="fas fa-envelope fa-2x"></i>
+                <p>contact@travislaudahl.com</p>
             </div>
             <div className='socials'>
                 <i id='github' title='Minnesota' className="fab fa-github fa-2x" onClick={handleClick}></i>

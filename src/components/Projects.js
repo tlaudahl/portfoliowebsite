@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga';
 import { Button, withStyles } from '@material-ui/core';
-import Fade from 'react-reveal/Fade';
 import '../css/projects.css';
 
 export default function Projects() {
@@ -23,7 +22,6 @@ export default function Projects() {
         <section className='projectsContainer' id='projects'>
             <h1>Projects</h1>
             <div className='projectsDiv'>
-                <Fade left>
                 <div className='projects'>
                     <h2>I'll Serve Soup</h2>
                     <p>I'll Serve Soup was created by a team of developers using a variety of technology over the course of one week</p>
@@ -41,8 +39,6 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                </Fade>
-                <Fade>
                 <div className='projects'>
                     <h2>NASA - Photo of the day</h2>
                     <p>This project was used with Axios making get requests to an external API and passing props and state.</p>
@@ -59,8 +55,6 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                </Fade>
-                <Fade right>
                 <div className='projects'>
                     <h2>Rick and Morty API</h2>
                     <p>This project was used with Axios making get requests to an external API, React and React Router</p>
@@ -78,7 +72,6 @@ export default function Projects() {
                     </div>
                     <img style={{ cursor: 'pointer'}} onMouseOver={e => (e.currentTarget.src=require('../assests/rick_and_morty.gif'))} id='rickAndMortyPic' onMouseOut={e => (e.currentTarget.src = require('../assests/rick_and_morty_bw.jpg'))} src={require("../assests/rick_and_morty_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
                 </div>
-                </Fade>
             </div>
         </section>
     )

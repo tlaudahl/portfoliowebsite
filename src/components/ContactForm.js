@@ -1,45 +1,39 @@
-import React from 'react';
-import { withStyles, makeStyles, TextField } from '@material-ui/core';
+import React, { useState } from 'react';
+import { withStyles } from '@material-ui/core';
+import { Form } from 'react-bootstrap';
 import Button from "@material-ui/core/Button";
+import axios from 'axios';
 import '../css/contact.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function ContactForm() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
-    const useStyles = makeStyles(theme => ({
-        root: {
-            display: "flex",
-            flexWrap: "wrap"
-        },
-        margin: {
-            margin: theme.spacing(1)
-        }
-    }));
+    const [messageSent, setMessageSent] = useState('');
 
-    const CssTextField = withStyles({
-        root: {
-            "& label.Mui-focused": {
-                color: "#66FCF1"
-            },
-            "& label": {
-                color: '#66FCF1'
-            },
-            "& .MuiInput-underline:after": {
-                borderBottomColor: "#66FCF1"
-            },
-            "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                    borderColor: "#66FCF1"
-                },
-                "&:hover fieldset": {
-                    borderColor: "#66FCF1"
-                },
-                "&.Mui-focused fieldset": {
-                    borderColor: "#66FCF1"
-                }
+    const mailOptions = {
+        from: `${email}`,
+        to: 'travis.laudahl@gmail.com',
+        subject: 'Portfolio Contact Form',
+        text: `Name: ${name}, Email: ${email} \n ${message}`
+    };
+
+    const sendMail = (e) => {
+        axios.post('http://localhost:4000/send', mailOptions)
+        .then(res => {
+            if(res.status === 200) {
+                setName('');
+                setEmail('');
+                setMessage('');
+                setMessageSent(true);
             }
-        }
-    })(TextField);
+        })
+        .catch(err => console.error(err))
+    }
 
     const ColorButton = withStyles(theme => ({
         root: {
@@ -47,44 +41,29 @@ function ContactForm() {
         },
     }))(Button);
 
-    const classes = useStyles();
-
     return (
         <section className='contact' id='contact'>
             <div className='contactFormContainer'>
-                <form action='https://formcarry.com/s/F6SGODTF9OL' method='POST' className='contactForm'>
+                <Form method='POST' action='http://localhost:4000/send' className='contactForm'>
                     <h1>Contact</h1>
                     <p>Have a question or want to meet? Shoot me an email.</p>
-                    <CssTextField
-                    className={classes.margin}
-                    id='name'
-                    name='Name'
-                    type='text'
-                    label='Name'
-                    variant='outlined'
-                    fullWidth />
-                    <CssTextField
-                    className={classes.margin}
-                    id='email'
-                    name='Email'
-                    label='Email'
-                    type='text'
-                    variant='outlined'
-                    fullWidth />
-                    <CssTextField
-                    className={classes.margin}
-                    id='message'
-                    name='Message'
-                    type='text'
-                    label='Message'
-                    variant='outlined'
-                    multiline
-                    rows='4'
-                    fullWidth />
+                    {messageSent && 
+                        <p id='messageSent'>Message Sent Successfully!</p>
+                    }
+                    <Form.Label style={{ color: '#45A29E' }}>Name</Form.Label>
+                    <Form.Control data-name='name' value={name} onChange={(e) => setName(e.target.value)} type='text' placeholder='Name' style={{ color: 'white', backgroundColor: '#04060d', marginBottom: '1%' }}/>
+                    <Form.Label style={{ color: '#45A29E' }}>Email</Form.Label>
+                    <Form.Control data-name='from' value={email} onChange={(e) => setEmail(e.target.value)} type='text' placeholder='Email' style={{ color: 'white', backgroundColor: '#04060d', marginBottom: '1%' }}/>
+                    <Form.Label style={{ color: '#45A29E' }}>Message</Form.Label>
+                    <Form.Control data-name='message' value={message} as='textarea' rows='4' placeholder='Message' style={{ color: 'white', backgroundColor: '#04060d', marginBottom: '1%' }} onChange={(e) => setMessage(e.target.value)}/>
                     <ColorButton
                     type='submit'
-                    variant='contained'>Submit</ColorButton>
-                </form>
+                    variant='contained'
+                    onClick={(e) => {
+                        e.preventDefault();
+                        sendMail();
+                    }}>Submit</ColorButton>
+                </Form>
             </div>
         </section>
     );
