@@ -23,7 +23,7 @@ function ContactForm() {
     };
 
     const sendMail = (e) => {
-        axios.post('http://localhost:4000/send', mailOptions)
+        axios.post('https://nodemailer-backend.herokuapp.com/send', mailOptions)
         .then(res => {
             if(res.status === 200) {
                 setName('');
@@ -44,7 +44,7 @@ function ContactForm() {
     return (
         <section className='contact' id='contact'>
             <div className='contactFormContainer'>
-                <Form method='POST' action='http://localhost:4000/send' className='contactForm'>
+                <Form method='POST' action='https://nodemailer-backend.herokuapp.com/send' className='contactForm'>
                     <h1>Contact</h1>
                     <p>Have a question or want to meet? Shoot me an email.</p>
                     {messageSent && 
