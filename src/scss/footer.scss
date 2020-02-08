@@ -4,6 +4,9 @@ footer {
     @include flexRowCenter(space-between);
     background-color: $secondaryColor;
     .copyEmail {
+        p {
+            margin-top: 15px !important
+        }
         @include flexRowCenter(space-between);
         width: 20%;
         @media screen and (max-width: 800px) {

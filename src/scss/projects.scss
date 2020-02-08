@@ -46,6 +46,13 @@
                 width: 90%;
                 margin-bottom: 3%;
             }
+            img {
+                @media screen and (max-width: 500px) {
+                    width: 350px;
+                    height: 175px;
+                    margin: 10px;
+                }
+            }
             .projectButtonContainer {
                 a {
                     text-decoration: none;

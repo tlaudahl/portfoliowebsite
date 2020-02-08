@@ -27,5 +27,7 @@
         font-size: 1.4em;
         padding: 0;
         margin: 2% 0; }
+      .contact .contactFormContainer .contactForm #messageSent {
+        color: #66FCF1; }
       .contact .contactFormContainer .contactForm input, .contact .contactFormContainer .contactForm textarea {
         color: white; }
