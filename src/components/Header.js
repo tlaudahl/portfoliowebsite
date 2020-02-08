@@ -26,7 +26,7 @@ export default function Header(props) {
             <h1>Travis Laudahl</h1>
             <h2>Full Stack Web Developer</h2>
             <div className='socials'>
-                <div className='email'><a href='#contact'><i id='email' title='travis.laudahl@gmail.com' className="fas fa-envelope fa-2x"></i></a></div>
+                <div className='email'><a href='#contact'><i id='email' title='contact@travislaudahl.com' className="fas fa-envelope fa-2x"></i></a></div>
                 <i id='github' title='tlaudahl' className="fab fa-github fa-2x" onClick={(e) => {
                     analytics('Socials', 'Clicked to view my Github')
                     handleClick(e)
