@@ -46,6 +46,11 @@
         .projectsContainer .projectsDiv .projects {
           width: 90%;
           margin-bottom: 3%; } }
+      @media screen and (max-width: 500px) {
+        .projectsContainer .projectsDiv .projects img {
+          width: 350px;
+          height: 175px;
+          margin: 10px; } }
       .projectsContainer .projectsDiv .projects .projectButtonContainer a {
         text-decoration: none; }
       .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {

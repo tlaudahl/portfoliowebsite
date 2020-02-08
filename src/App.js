@@ -30,7 +30,7 @@ function App() {
           ReactGA.pageview(window.location.pathname);
         }}
       >
-        This website uses google analytics, mainly for practice, but to also track page views, button clicks, and load times. If you decline nothing will be sent to my personal google analytics dashboard.{" "}
+        This website uses google analytics, mainly for practice, but to also track page views, button clicks, and load times. If you decline nothing will be sent to my google analytics dashboard.{" "}
       </CookieConsent>
       <Navigation />
       <Header />
