@@ -13,8 +13,8 @@ export default function Projects() {
 
     const analytics = (category, action) => {
         ReactGA.event({
-            category: category,
-            action: action 
+            category,
+            action 
         })
     }
 
@@ -23,41 +23,26 @@ export default function Projects() {
             <h1>Projects</h1>
             <div className='projectsDiv'>
                 <div className='projects'>
-                    <h2>I'll Serve Soup</h2>
-                    <p>I'll Serve Soup was created by a team of developers using a variety of technology over the course of one week</p>
-                    <p>I was responsible for building the "Marketing Page" which is the page you will see if you click the Live button. It was built after finishing the first unit (3 weeks) at Lambda School.</p>
+                    <h2>Space Cowboy</h2>
+                    <p>Space Cowboy was created by four developers using React on the frontend and Flask on the backend.</p>
+                    <p>Responsible for displaying the "space cowboy" over canvas, then being able to control it with arrow keys and WASD, and using Canvas API to display a tilemap generated from the backend.</p>
                     <div className='projectButtonContainer'>
-                        <a href='https://github.com/bw-ill-serve-soup/web-ui-bryant-travis' target='_blank' rel="noopener noreferrer">
-                            <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view code for I Serve Soup')}>
+                        <a href='https://github.com/python-django-unchained/space-cowboy--FE' target='_blank' rel="noopener noreferrer">
+                            <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view code for Space Cowboy')}>
                             Code
                             </ColorButton>
                         </a>
-                        <a href='https://illservesoup23.netlify.com/' target='_blank' rel="noopener noreferrer">
-                        <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view live version on I Serve Soup')}>
+                        <a href='https://space-cowboys.netlify.com/' target='_blank' rel="noopener noreferrer">
+                        <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view live version of Space Cowboy')}>
                             Live
                         </ColorButton>
                         </a>
                     </div>
-                </div>
-                <div className='projects'>
-                    <h2>NASA - Photo of the day</h2>
-                    <p>This project was used with Axios making get requests to an external API and passing props and state.</p>
-                    <div className='projectButtonContainer'>
-                        <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank' rel="noopener noreferrer">
-                            <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for NASA Project')}>
-                            Code
-                            </ColorButton>
-                        </a>
-                        <a href='https://tlaudahl-nasa-apod.netlify.com/' target='_blank' rel="noopener noreferrer">
-                        <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the live version for the NASA Project')}>
-                            Live
-                        </ColorButton>
-                        </a>
-                    </div>
+                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/space-cowboy/overview.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/space-cowboy/overview.gif'))} onMouseOut={e => (e.currentTarget.src = require('../assets/space-cowboy/map-bw.jpg'))} src={require("../assets/space-cowboy/map-bw.jpg")} alt='Space Cowboy Project' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
                 </div>
                 <div className='projects'>
                     <h2>Rick and Morty API</h2>
-                    <p>This project was used with Axios making get requests to an external API, React and React Router</p>
+                    <p>This project was used with Axios making get requests to an external API, React and React Router using dynamic routes for each location, episode, and character.</p>
                     <div className='projectButtonContainer'>
                         <a href='https://github.com/tlaudahl/React-Redux-App' target='_blank' rel="noopener noreferrer">
                             <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for Rick and Morty API App')}>
@@ -70,7 +55,25 @@ export default function Projects() {
                         </ColorButton>
                         </a>
                     </div>
-                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assests/rick_and_morty.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assests/rick_and_morty.gif'))} id='rickAndMortyPic' onMouseOut={e => (e.currentTarget.src = require('../assests/rick_and_morty_bw.jpg'))} src={require("../assests/rick_and_morty_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
+                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/rick-and-morty/rick_and_morty.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/rick-and-morty/rick_and_morty.gif'))} id='rickAndMortyPic' onMouseOut={e => (e.currentTarget.src = require('../assets/rick-and-morty/rick_and_morty_bw.jpg'))} src={require("../assets/rick-and-morty/rick_and_morty_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
+                </div>
+                <div className='projects'>
+                    <h2>NASA - Photo of the day</h2>
+                    <p>This project was used with Axios making get requests to an external API and passing props and state.</p>
+                    <p>You can view NASA's Photo Of The Day all the way back to June 23rd, 1995 - the first ever Photo Of The Day</p>
+                    <div className='projectButtonContainer'>
+                        <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank' rel="noopener noreferrer">
+                            <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for NASA Project')}>
+                            Code
+                            </ColorButton>
+                        </a>
+                        <a href='https://tlaudahl-nasa-apod.netlify.com/' target='_blank' rel="noopener noreferrer">
+                        <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the live version for the NASA Project')}>
+                            Live
+                        </ColorButton>
+                        </a>
+                    </div>
+                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/nasa/nasa.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/nasa/nasa.gif'))} onMouseOut={e => (e.currentTarget.src = require('../assets/nasa/main_bw.jpg'))} src={require("../assets/nasa/main_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
                 </div>
             </div>
         </section>
