@@ -38,23 +38,7 @@ export default function Projects() {
                         </ColorButton>
                         </a>
                     </div>
-                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/space-cowboy/overview.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/space-cowboy/overview.gif'))} id='rickAndMortyPic' onMouseOut={e => (e.currentTarget.src = require('../assets/space-cowboy/map-bw.jpg'))} src={require("../assets/space-cowboy/map-bw.jpg")} alt='Space Cowboy Project' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
-                </div>
-                <div className='projects'>
-                    <h2>NASA - Photo of the day</h2>
-                    <p>This project was used with Axios making get requests to an external API and passing props and state.</p>
-                    <div className='projectButtonContainer'>
-                        <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank' rel="noopener noreferrer">
-                            <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for NASA Project')}>
-                            Code
-                            </ColorButton>
-                        </a>
-                        <a href='https://tlaudahl-nasa-apod.netlify.com/' target='_blank' rel="noopener noreferrer">
-                        <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the live version for the NASA Project')}>
-                            Live
-                        </ColorButton>
-                        </a>
-                    </div>
+                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/space-cowboy/overview.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/space-cowboy/overview.gif'))} onMouseOut={e => (e.currentTarget.src = require('../assets/space-cowboy/map-bw.jpg'))} src={require("../assets/space-cowboy/map-bw.jpg")} alt='Space Cowboy Project' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
                 </div>
                 <div className='projects'>
                     <h2>Rick and Morty API</h2>
@@ -72,6 +56,24 @@ export default function Projects() {
                         </a>
                     </div>
                     <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/rick-and-morty/rick_and_morty.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/rick-and-morty/rick_and_morty.gif'))} id='rickAndMortyPic' onMouseOut={e => (e.currentTarget.src = require('../assets/rick-and-morty/rick_and_morty_bw.jpg'))} src={require("../assets/rick-and-morty/rick_and_morty_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
+                </div>
+                <div className='projects'>
+                    <h2>NASA - Photo of the day</h2>
+                    <p>This project was used with Axios making get requests to an external API and passing props and state.</p>
+                    <p>You can view NASA's Photo Of The Day all the way back to June 23rd, 1995 - the first ever Photo Of The Day</p>
+                    <div className='projectButtonContainer'>
+                        <a href='https://github.com/tlaudahl/nasa-photo-of-the-day' target='_blank' rel="noopener noreferrer">
+                            <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the code for NASA Project')}>
+                            Code
+                            </ColorButton>
+                        </a>
+                        <a href='https://tlaudahl-nasa-apod.netlify.com/' target='_blank' rel="noopener noreferrer">
+                        <ColorButton className='projectButton' variant='contained' onClick={() => analytics('Projects', 'Clicked to view the live version for the NASA Project')}>
+                            Live
+                        </ColorButton>
+                        </a>
+                    </div>
+                    <img style={{ cursor: 'pointer' }} onTouchStart={e => (e.currentTarget.src=require('../assets/nasa/nasa.gif'))} onMouseOver={e => (e.currentTarget.src=require('../assets/nasa/nasa.gif'))} onMouseOut={e => (e.currentTarget.src = require('../assets/nasa/main_bw.jpg'))} src={require("../assets/nasa/main_bw.jpg")} alt='Rick and Morty Project GIF' onClick={() => window.open('https://sparandmapi.netlify.com', '_blank')} />
                 </div>
             </div>
         </section>
