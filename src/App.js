@@ -12,7 +12,9 @@ import Footer from './components/Footer';
 
 const trackingId = 'UA-157433924-1'
 
-window['ga-disable-UA-157433924-1'] = true;
+ReactGA.initialize(trackingId);
+ReactGA.set({ anonymizeIp: true });
+ReactGA.pageview(window.location.pathname);
 
 function App() {
   console.log('I too like to look under the hood of websites! Reach out @ contact@travislaudahl.com')
@@ -20,23 +22,11 @@ function App() {
     <div className="App">
       <CookieConsent
         location='bottom'
-        buttonText='Accept'
-        enableDeclineButton
-        declineButtonText='Decline'
+        buttonText='Okay'
         style={{ color: 'white', background: '#04060D' }}
-        buttonStyle={{ background: '#45a29e' }}
-        onAccept={() => {
-          window['ga-disable-UA-157433924-1'] = false;
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-157433924-1');
-          ReactGA.initialize(trackingId);
-          ReactGA.set({ anonymizeIp: true });
-          ReactGA.pageview(window.location.pathname);
-        }}
+        buttonStyle={{ background: '#66fcf1', fontWeight: 'bold' }}
       >
-        This website uses google analytics, mainly for practice, but to also track page views, button clicks, and load times. If you decline nothing will be sent to my google analytics dashboard.{" "}
+        This website uses google analytics, mainly for practice, but to also track page views, button clicks, and load times. {" "}
       </CookieConsent>
       <Navigation />
       <Header />
