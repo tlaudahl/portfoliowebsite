@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 const trackingId = 'UA-157433924-1'
 
-window['ga-disable-UA-157433924-1'] = true;
+// window['ga-disable-UA-157433924-1'] = true;
 
 function App() {
   console.log('I too like to look under the hood of websites! Reach out @ contact@travislaudahl.com')
@@ -35,6 +35,9 @@ function App() {
           ReactGA.set({ anonymizeIp: true });
           ReactGA.pageview(window.location.pathname);
         }}
+        onDecline={() => {
+          window['ga-disable-UA-157433924-1'] = true;   
+        }
       >
         This website uses google analytics, mainly for practice, but to also track page views, button clicks, and load times. If you decline nothing will be sent to my google analytics dashboard.{" "}
       </CookieConsent>
