@@ -37,7 +37,7 @@ function App() {
         }}
         onDecline={() => {
           window['ga-disable-UA-157433924-1'] = true;   
-        }
+        }}
       >
         This website uses google analytics, mainly for practice, but to also track page views, button clicks, and load times. If you decline nothing will be sent to my google analytics dashboard.{" "}
       </CookieConsent>
