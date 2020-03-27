@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 
 const trackingId = 'UA-157433924-1'
 
+window['ga-disable-UA-157433924-1'] = true;
+
 function App() {
   console.log('I too like to look under the hood of websites! Reach out @ contact@travislaudahl.com')
   return (
@@ -25,6 +27,10 @@ function App() {
         buttonStyle={{ background: '#45a29e' }}
         onAccept={() => {
           window['ga-disable-UA-157433924-1'] = false;
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-157433924-1');
           ReactGA.initialize(trackingId);
           ReactGA.set({ anonymizeIp: true });
           ReactGA.pageview(window.location.pathname);
