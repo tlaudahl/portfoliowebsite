@@ -17,7 +17,7 @@
       align-items: center; }
       .contact .contactFormContainer .contactForm h1 {
         color: #45A29E;
-        margin-bottom: 2%;
+        margin-bottom: .5rem;
         font-size: 4rem; }
         @media screen and (max-width: 500px) {
           .contact .contactFormContainer .contactForm h1 {

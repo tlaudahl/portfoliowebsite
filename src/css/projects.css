@@ -18,7 +18,8 @@
   .projectsContainer h1 {
     color: #45A29E;
     margin-bottom: 2%;
-    font-size: 4rem; }
+    font-size: 4rem;
+    padding-top: 2rem; }
     @media screen and (max-width: 500px) {
       .projectsContainer h1 {
         font-size: 2rem; } }

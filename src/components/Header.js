@@ -29,7 +29,9 @@ export default function Header(props) {
             <div className='socials'>
                 <div className='email'>
                     <a href='#contact'>
-                        <i data-tip data-for='email' id='email' className="fas fa-envelope fa-2x">
+                        <i data-tip data-for='email' id='email' className="fas fa-envelope fa-2x" onClick={(e) => {
+                            console.log(e.target)
+                        }}>
                         </i>
                     </a>
                 </div>
@@ -55,11 +57,11 @@ export default function Header(props) {
                     handleClick(e)
                 }}></i>
                 <ReactTooltip effect="solid" className='toolTip' id='twitter' aria-haspopup="true" role="Tool Tip">
-                    travis-laudahl
+                    LaudahlTravis
                 </ReactTooltip>
             </div>
             <p id='about'>
-            Full Stack Web Developer primarily building with JavaScript, React, React Native, Node.js, and Redux right now. I have a background in management in the automotive field and currently work as an aircraft deicer on the weekends while finishing up my studies full-time in <a href='https://lambdaschool.com/' target='_blank' rel="noopener noreferrer">Lambda School</a>. I've had the opportunity to study in their accelerated <a href='https://learn.lambdaschool.com/course/cs-fsw' target='_blank' rel="noopener noreferrer">Full Stack Web Development program</a> since August 2019. Having always loved computers and wanting to eventually transition into software development, Lambda School's accessible and challenging program was the right opportunity to launch this transition. As someone who is a natural at tinkering and problem solving, I look forward to contributing my skills to a team, building products and tools people love.
+            Full Stack Web Developer primarily building with JavaScript, React, Node.js, and Redux. I have a background in management in the automotive field and currently work as an aircraft deicer on the weekends while finishing up my studies full-time in <a href='https://lambdaschool.com/' target='_blank' rel="noopener noreferrer">Lambda School</a>. I've had the opportunity to study in their accelerated <a href='https://learn.lambdaschool.com/course/cs-fsw' target='_blank' rel="noopener noreferrer">Full Stack Web Development program</a> since August 2019. Having always loved computers and wanting to eventually transition into software development, Lambda School's accessible and challenging program was the right opportunity to launch this transition. As someone who is a natural at tinkering and problem solving, I look forward to contributing my skills to a team, building products and tools people love.
             </p>
         </header>
     )

@@ -7,6 +7,7 @@
         color: $secondaryColor;
         margin-bottom: 2%;
         font-size: 4rem;
+        padding-top: 2rem;
         @media screen and (max-width: 500px) {
             font-size: 2rem;
         }
@@ -18,7 +19,7 @@
         @include flexRowCenter(center);
         flex-wrap: wrap;
         color: $mainColor;
-        height: 33vh;
+        height: 50vh;
         i {
             margin: 0 3%;
             @media screen and (max-width: 500px) {
