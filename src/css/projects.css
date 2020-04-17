@@ -51,27 +51,35 @@
           width: 350px;
           height: 175px;
           margin: 10px; } }
-      .projectsContainer .projectsDiv .projects .projectButtonContainer a {
-        text-decoration: none; }
-      .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
-        width: 15%;
-        margin: 5%; }
-        @media screen and (max-width: 500px) {
-          .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
-            margin: 0 2%; } }
-        @media screen and (max-width: 800px) {
-          .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
-            margin: 0 2%; } }
+      .projectsContainer .projectsDiv .projects .projectButtonContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        .projectsContainer .projectsDiv .projects .projectButtonContainer a {
+          text-decoration: none; }
+        .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
+          background-color: #45a29e;
+          border: none;
+          font-weight: 600;
+          width: 100px;
+          border-radius: 10px;
+          margin: 3% 0 3% 0;
+          transition: .33s; }
+          .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton:hover {
+            background-color: #ccc;
+            border-color: #ccc; }
+          @media screen and (max-width: 500px) {
+            .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
+              margin: 0 2%; } }
+          @media screen and (max-width: 800px) {
+            .projectsContainer .projectsDiv .projects .projectButtonContainer .projectButton {
+              margin: 0 2%; } }
       .projectsContainer .projectsDiv .projects .technologies {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center; }
         .projectsContainer .projectsDiv .projects .technologies .technology {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 25%; }
+          margin-left: 15px; }
           @media screen and (max-width: 500px) {
             .projectsContainer .projectsDiv .projects .technologies .technology {
               width: 50%; } }
