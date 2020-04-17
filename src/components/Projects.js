@@ -33,7 +33,7 @@ export default function Projects() {
                         <button className='projectButton' data-tip data-for='cowboy_tech'>
                             TECH
                         </button>
-                        <ReactTooltip effect="solid" className='toolTip' id='cowboy_tech' aria-haspopup="true" role="example">
+                        <ReactTooltip effect="solid" className='toolTip' id='cowboy_tech' aria-haspopup="true" role="Tool Tip">
                             <div className='technologies'>
                                 <div className='technology'>JavaScript <div><i id='skill' className="fab fa-js-square fa-2x"></i></div></div>
                                 <div className='technology'>React <div><i id='skill' className="fab fa-react fa-2x"></i></div></div>
@@ -63,7 +63,7 @@ export default function Projects() {
                         <button className='projectButton' data-tip data-for='rm_tech'>
                             TECH
                         </button>
-                        <ReactTooltip effect="solid" className='toolTip' id='rm_tech' aria-haspopup="true" role="example">
+                        <ReactTooltip effect="solid" className='toolTip' id='rm_tech' aria-haspopup="true" role="Tool Tip">
                             <div className='technologies'>
                                 <div className='technology'>JavaScript <div><i id='skill' className="fab fa-js-square fa-2x"></i></div></div>
                                 <div className='technology'>React <div><i id='skill' className="fab fa-react fa-2x"></i></div></div>
@@ -93,7 +93,7 @@ export default function Projects() {
                         <button className='projectButton' data-tip data-for='nasa_tech'>
                             TECH
                         </button>
-                        <ReactTooltip effect="solid" className='toolTip' id='nasa_tech' aria-haspopup="true" role="example">
+                        <ReactTooltip effect="solid" className='toolTip' id='nasa_tech' aria-haspopup="true" role="Tool Tip">
                             <div className='technologies'>
                                 <div className='technology'>JavaScript <div><i id='skill' className="fab fa-js-square fa-2x"></i></div></div>
                                 <div className='technology'>React <div><i id='skill' className="fab fa-react fa-2x"></i></div></div>
